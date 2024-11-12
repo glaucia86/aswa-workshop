@@ -10,45 +10,57 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Workshop Introduction',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        This workshop is designed to provide a comprehensive introduction to the
+        technical content found in the <code>docs</code> folder.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Technical Content',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The <code>docs</code> folder contains a variety of technical materials
+        covering different aspects of development and usage of Docusaurus.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Practical Examples',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Inside the <code>docs</code> folder, you will find practical examples
+        that help illustrate how to apply the concepts discussed in the
+        workshop.
+      </>
+    ),
+  },
+  {
+    title: 'Join the Journey',
+    Svg: require('@site/static/img/undraw_docusaurus_roadmap.svg').default,
+    description: (
+      <>
+        Follow along with this workshop to enhance your skills and knowledge.
+        Dive into the technical content and practical examples to get the most
+        out of this learning experience.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className='text--center'>
+        <Svg className={styles.featureSvg} role='img' />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+      <div className='text--center padding-horiz--md'>
+        <Heading as='h3'>{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
@@ -58,8 +70,8 @@ function Feature({title, Svg, description}: FeatureItem) {
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
+      <div className='container'>
+        <div className='row'>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
