@@ -39,18 +39,7 @@ const FeatureList: FeatureItem[] = [
         workshop.
       </>
     ),
-  },
-  {
-    title: 'Join the Journey',
-    Svg: require('@site/static/img/undraw_docusaurus_roadmap.svg').default,
-    description: (
-      <>
-        Follow along with this workshop to enhance your skills and knowledge.
-        Dive into the technical content and practical examples to get the most
-        out of this learning experience.
-      </>
-    ),
-  },
+  }
 ];
 
 function Feature({ title, Svg, description }: FeatureItem) {
