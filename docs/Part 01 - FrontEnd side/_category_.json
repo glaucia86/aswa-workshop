@@ -1,8 +1,7 @@
 {
   "label": "Part 01 - FrontEnd side",
-  "position": 2,
+  "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Lets start with the FrontEnd side of the project"
+    "type": "generated-index"
   }
 }
